@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.navbar{
+    width: 100%;
+    margin: 10px 0px;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;                                                
+}
+#home{
+    background: url(images/portfolio-bg) no-repeat center center/cover;
+    width: 100%;
+    height: 650px;
+    margin-top: 0;
+    margin-left: 0;
+    color: white;
+    padding: 10px;
+}
+.nav-content a{
+    display: inline-block;
+    justify-content: center;
+    color: white;
+    justify-content: space-around;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+.nav-content{
+    background-color: rgba(241, 241, 241, .3);
+    padding: 15px;
+    border-radius: 20px;
+    justify-content: space-around;
+    width: 550px;
+    display: flex;
+    position: fixed;
+    border: 3px solid black;
+    z-index: 1;
+}
+.nav-content a:hover{
+    color: aqua;
+    text-decoration: underline;
+    text-shadow: 0 0 25px aqua,0 0 50px aqua;
+    
+}
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    margin-left: -250px;
+    font-size: 25px;
+    font-weight: 600;
+    transition: .3s ease;
+    background-color: transparent;
+}
+.logo:hover{
+    color: aqua;
+    text-shadow: 0 0 25px  aqua, 0 0 50px aqua;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.icon{
+    width: 180px;
+    display: flex;
+    margin-left: -950px;
+    
+}
+.icon a {
+    font-size: 25px;
+    color: white;
+    border: 2px solid aqua;
+    width: 40px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 40%;
+    margin: 0 15px;
+    box-shadow: 0 0 10px aqua, 0 0 10px aqua ;
+    transition: 0.5s ease;
+    display: inline-block;
+
+}
+.icon a:hover{
+    color: aqua;
+    transform: scale(1.05) translateY(-10px);
+    border: 4px solid aqua;
+    box-shadow: 0 0 10px aqua, 0 0 10px aqua ;
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.home-name{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 35px;
+}
+.home-content h1{
+    font-size: 60px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+   margin: 20px 0 30px;
+}
+span{
+    color: aqua;
+}
+.home-name .btn{
+    color: white;
+    background-color: black;
+    width: 150px;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 90px;
+    border: 2px solid aqua;
+    transition: .3s ease;
+}
+.home-name .btn:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: 0 0 25px aqua;
+    border: 1px aqua;
+}
+.home-img img{
+    border-radius: 50%;
+    box-shadow: 0 0 25px blue;
+    transition: 0.3s ease;
+}
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    color: white;
+    background-color: black;
+    margin-top: 0px;
+}
+.about-content{
+    width: 40%;
+    height: 400px;
+    line-height: 1.5;
+}
+.about-content h3{
+    font-size: 60px;
+    color: aqua;
+    display: inline;
+    transition: .3s ease;
+}
+.about-content h3:hover{
+    text-shadow: 0 0 25px blue, 0 0 50px blue;
+    cursor: pointer;
+}
+.about-content p{
+    margin-top: 30px;
+    line-height: 1.8;
+    font-size: 18px;
+    word-spacing: 5px;
+}
+.about-img{
+    background-color: aqua;
+    width: 450px;
+    height: 450px;
+    border-radius: 10%;
+}
+.about-img img{
+    position: relative;
+    margin: 50px ;
+    border-radius: 20px;
+    box-shadow: 0 0 20px blue, 0 0 40px blue;
+}
+#project{
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding-top: 80px;
+}
+#project h2{
+    font-size: 50px;
+    text-align: center;
+}
+#project h4{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+
+}
+#project p{
+    font-size: 18px;
+    margin-left: 80px;
+}
+.project-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project-img img{
+    width: 400px;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px darkgrey ;
+    margin-top: 30px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.project-img img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px aqua , 0 0 30px aqua;
+    border: 2px solid aqua;
+}
+#contact{
+    width: 100%;
+    height: 650px;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contact .con-info{
+    width: 45%;
+    height: 400px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: -30px;
+    color: black;
+    box-shadow: 0 0 10px aqua , 0 0 10px aqua;
+}
+#contact .con-info .box{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin: 70px 60px;
+}
+#contact .con-info h2{
+    font-size: 50px;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.box i{
+    border: 2px solid aqua;
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: black;
+    background-color:aqua ;
+    text-align: center;
+    border: 2px solid aqua;
+}
+#contact .con-info p{
+    font-size: 18px;
+    margin: 20px 20px;
+    line-height: 2;
+}
+#contact .con-form{
+    width: 45%;
+    height: 400px;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+#contact .con-form form input {
+    width: 70%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+#contact .con-form form textarea{
+    width: 70%;
+    padding: 20px;
+    margin: 5px 0;
+    margin-left: 30px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.con-form button{
+    margin-top: 25px;
+    margin-left: 32%;
+    padding: 7px;
+    border-radius: 15px;
+    border: 2px solid aqua;
+    transition: .3s ease;
+    background-color: black;
+    color: white;
+}
+.con-form button:hover{
+    background: aqua;
+    border: 2px solid aqua;
+    box-shadow: 0 0 10px aqua;
+    color: black;
+}
+footer{
+    position: relative;
+    margin-bottom: 0;
+    background-color: white;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+footer .social{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+footer .social a{
+    margin-right: px;
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    box-shadow: 0 0 10px black;
+    transition: .5s ease;
+    margin: 0 20px;
+    height: 40px;
+    width: 40px;
+}
+footer .social a:hover{
+    background-color: black;
+    color: aqua;
+    box-shadow: 0 0 30px aqua, 0 0 50px aqua;
+    border: 2px solid aqua;
+}
+footer p{
+    font-size: 12px;
+    font-weight: 600;
+}
+html{
+    scroll-behavior: smooth;
+}
